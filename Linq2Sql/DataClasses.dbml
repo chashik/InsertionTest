@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="mir" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CHUGGUN\SQLEXPRESS;Initial Catalog=mir;Persist Security Info=True;User ID=cl" SettingsObjectName="Linq2Sql.Properties.Settings" SettingsPropertyName="mirConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.METERINGS" Member="METERINGs">
+    <Type Name="METERING">
+      <Column Name="IDOBJECT" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDTYPE_OBJECT" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TIME_BEGIN" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="TIME_END" Type="System.DateTime" DbType="DateTime2 NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDOBJECT_AGGREGATE" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDOBJECT_AVERAGE" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VALUE_METERING" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TIME_INSERT" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
