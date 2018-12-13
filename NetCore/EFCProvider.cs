@@ -4,7 +4,7 @@ namespace NetCore
 {
     public class EFCProvider : Provider<METERING>
     {
-        public override string Name => "NetCore";
+        public override string Name => "Entity Framework Core";
 
         public EFCProvider(Metering[] meterings) : base(meterings)
             { }

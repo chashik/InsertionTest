@@ -14,7 +14,7 @@ namespace NetCore
         {
         }
 
-        public override string Name => "SqlClient (Stored procedure - for iterative, SqlBulkCopy - for bulk)";
+        public override string Name => "SqlClient .Net Core (Stored procedure - for iterative, SqlBulkCopy - for bulk)";
 
         public override void ClearSource()
          {
