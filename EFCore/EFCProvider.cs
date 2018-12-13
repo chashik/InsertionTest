@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NetCoreTest
+namespace EFCore
 {
     public class EFCProvider : Provider<METERING>
     {

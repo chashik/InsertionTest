@@ -18,9 +18,12 @@ namespace ConsoleApp
 
             var meterings = data.Meterings;
 
+            Test.Run(new SQLClientProvider(meterings));
+
             Test.Run(new Linq2SqlProvider(meterings));
 
             Test.Run(new EF6Provider(meterings));
+
 
             Console.WriteLine("Finished. Hit Enter to continue..");
             Console.ReadLine();

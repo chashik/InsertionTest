@@ -1,4 +1,4 @@
-﻿namespace NetCoreTest
+﻿namespace EFCore
 {
     public interface IProvider
     {

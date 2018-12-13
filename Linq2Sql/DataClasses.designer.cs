@@ -72,6 +72,27 @@ namespace Linq2Sql
 				return this.GetTable<METERING>();
 			}
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.METERING_Delete")]
+		public int METERING_Delete([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDOBJECT", DbType="Int")] System.Nullable<int> iDOBJECT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDTYPE_OBJECT", DbType="Int")] System.Nullable<int> iDTYPE_OBJECT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TIME_END", DbType="DateTime2")] System.Nullable<System.DateTime> tIME_END, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDOBJECT_AGGREGATE", DbType="Int")] System.Nullable<int> iDOBJECT_AGGREGATE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDOBJECT_AVERAGE", DbType="Int")] System.Nullable<int> iDOBJECT_AVERAGE)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDOBJECT, iDTYPE_OBJECT, tIME_END, iDOBJECT_AGGREGATE, iDOBJECT_AVERAGE);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.METERING_Insert")]
+		public int METERING_Insert([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDOBJECT", DbType="Int")] System.Nullable<int> iDOBJECT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDTYPE_OBJECT", DbType="Int")] System.Nullable<int> iDTYPE_OBJECT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TIME_END", DbType="DateTime2")] System.Nullable<System.DateTime> tIME_END, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDOBJECT_AGGREGATE", DbType="Int")] System.Nullable<int> iDOBJECT_AGGREGATE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDOBJECT_AVERAGE", DbType="Int")] System.Nullable<int> iDOBJECT_AVERAGE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TIME_BEGIN", DbType="DateTime2")] System.Nullable<System.DateTime> tIME_BEGIN, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="STATUS", DbType="Int")] System.Nullable<int> sTATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="VALUE_METERING", DbType="Float")] System.Nullable<double> vALUE_METERING, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TIME_INSERT", DbType="DateTime2")] System.Nullable<System.DateTime> tIME_INSERT)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDOBJECT, iDTYPE_OBJECT, tIME_END, iDOBJECT_AGGREGATE, iDOBJECT_AVERAGE, tIME_BEGIN, sTATUS, vALUE_METERING, tIME_INSERT);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.METERING_Update")]
+		public int METERING_Update([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDOBJECT", DbType="Int")] System.Nullable<int> iDOBJECT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDTYPE_OBJECT", DbType="Int")] System.Nullable<int> iDTYPE_OBJECT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TIME_END", DbType="DateTime2")] System.Nullable<System.DateTime> tIME_END, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDOBJECT_AGGREGATE", DbType="Int")] System.Nullable<int> iDOBJECT_AGGREGATE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDOBJECT_AVERAGE", DbType="Int")] System.Nullable<int> iDOBJECT_AVERAGE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TIME_BEGIN", DbType="DateTime2")] System.Nullable<System.DateTime> tIME_BEGIN, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="STATUS", DbType="Int")] System.Nullable<int> sTATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="VALUE_METERING", DbType="Float")] System.Nullable<double> vALUE_METERING, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TIME_INSERT", DbType="DateTime2")] System.Nullable<System.DateTime> tIME_INSERT)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDOBJECT, iDTYPE_OBJECT, tIME_END, iDOBJECT_AGGREGATE, iDOBJECT_AVERAGE, tIME_BEGIN, sTATUS, vALUE_METERING, tIME_INSERT);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.METERINGS")]

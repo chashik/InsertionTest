@@ -8,11 +8,12 @@ namespace EF6
         public override string Name => "EF6";
 
         public EF6Provider(Metering[] meterings) : base(meterings)
-            { }
+        {
+        }
 
         protected override void AddSingle(METERING item)
         {
-            using (var context = new mirEntities())
+            using (var context = new MirEntities())
             {
                 context.METERINGS.Add(item);
                 context.SaveChanges();
@@ -21,7 +22,7 @@ namespace EF6
 
         protected override void AddMultiple(METERING[] dataItems)
         {
-            using (var context = new mirEntities())
+            using (var context = new MirEntities())
             {
                 context.METERINGS.AddRange(dataItems);
                 context.SaveChanges();
@@ -30,7 +31,7 @@ namespace EF6
 
         public override void ClearSource()
         {
-            using (var context = new mirEntities())
+            using (var context = new MirEntities())
             {
                 context.METERINGS.RemoveRange(context.METERINGS);
                 context.SaveChanges();

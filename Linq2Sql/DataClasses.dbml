@@ -13,4 +13,36 @@
       <Column Name="TIME_INSERT" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
+  <Function Name="dbo.METERING_Delete" Method="METERING_Delete">
+    <Parameter Name="IDOBJECT" Parameter="iDOBJECT" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDTYPE_OBJECT" Parameter="iDTYPE_OBJECT" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TIME_END" Parameter="tIME_END" Type="System.DateTime" DbType="DateTime2" />
+    <Parameter Name="IDOBJECT_AGGREGATE" Parameter="iDOBJECT_AGGREGATE" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDOBJECT_AVERAGE" Parameter="iDOBJECT_AVERAGE" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.METERING_Insert" Method="METERING_Insert">
+    <Parameter Name="IDOBJECT" Parameter="iDOBJECT" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDTYPE_OBJECT" Parameter="iDTYPE_OBJECT" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TIME_END" Parameter="tIME_END" Type="System.DateTime" DbType="DateTime2" />
+    <Parameter Name="IDOBJECT_AGGREGATE" Parameter="iDOBJECT_AGGREGATE" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDOBJECT_AVERAGE" Parameter="iDOBJECT_AVERAGE" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TIME_BEGIN" Parameter="tIME_BEGIN" Type="System.DateTime" DbType="DateTime2" />
+    <Parameter Name="STATUS" Parameter="sTATUS" Type="System.Int32" DbType="Int" />
+    <Parameter Name="VALUE_METERING" Parameter="vALUE_METERING" Type="System.Double" DbType="Float" />
+    <Parameter Name="TIME_INSERT" Parameter="tIME_INSERT" Type="System.DateTime" DbType="DateTime2" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.METERING_Update" Method="METERING_Update">
+    <Parameter Name="IDOBJECT" Parameter="iDOBJECT" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDTYPE_OBJECT" Parameter="iDTYPE_OBJECT" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TIME_END" Parameter="tIME_END" Type="System.DateTime" DbType="DateTime2" />
+    <Parameter Name="IDOBJECT_AGGREGATE" Parameter="iDOBJECT_AGGREGATE" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDOBJECT_AVERAGE" Parameter="iDOBJECT_AVERAGE" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TIME_BEGIN" Parameter="tIME_BEGIN" Type="System.DateTime" DbType="DateTime2" />
+    <Parameter Name="STATUS" Parameter="sTATUS" Type="System.Int32" DbType="Int" />
+    <Parameter Name="VALUE_METERING" Parameter="vALUE_METERING" Type="System.Double" DbType="Float" />
+    <Parameter Name="TIME_INSERT" Parameter="tIME_INSERT" Type="System.DateTime" DbType="DateTime2" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

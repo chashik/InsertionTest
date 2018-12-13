@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace NetCoreTest
+namespace EFCore
 {
     public static class Test
     {

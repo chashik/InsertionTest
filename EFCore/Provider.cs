@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace NetCoreTest
+namespace EFCore
 {
     public abstract class Provider<T> : IProvider where T : class
     {
