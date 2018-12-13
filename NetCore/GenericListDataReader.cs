@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Reflection;
 
-namespace EF6
+namespace NetCore
 {
 	public static class GenericListDataReaderExtensions
 	{

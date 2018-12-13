@@ -82,6 +82,10 @@
       <Project>{58f2fe13-e83b-4467-a779-c92d206067a2}</Project>
       <Name>EF6</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ORMFree\ORMFree.csproj">
+      <Project>{4a41a256-1026-4599-bb25-d7ce3ca9841d}</Project>
+      <Name>ORMFree</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

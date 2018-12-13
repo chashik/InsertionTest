@@ -5,7 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 
-namespace EF6
+namespace ORMFree
 {
     public class SQLClientProvider : Provider<METERING>
     {
@@ -60,17 +60,7 @@ namespace EF6
 
         protected override void AddSingle(METERING item)
         {
-            /*@IDOBJECT [int],
-            @IDTYPE_OBJECT [int],
-            @TIME_END [datetime2],
-            @IDOBJECT_AGGREGATE [int],
-            @IDOBJECT_AVERAGE [int],
-            @TIME_BEGIN [datetime2],
-            @STATUS [int],
-            @VALUE_METERING [float],
-            @TIME_INSERT [datetime2]*/
-
-            using (SqlConnection myConnection = new SqlConnection(_connectionString))
+             using (SqlConnection myConnection = new SqlConnection(_connectionString))
             {
                 myConnection.Open();
 

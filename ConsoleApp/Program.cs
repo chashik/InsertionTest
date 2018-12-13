@@ -2,6 +2,7 @@
 using EF6;
 using Linq2Sql;
 using System;
+using ORMFree;
 
 namespace ConsoleApp
 {

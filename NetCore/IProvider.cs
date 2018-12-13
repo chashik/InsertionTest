@@ -1,4 +1,4 @@
-﻿namespace EFCore
+﻿namespace NetCore
 {
     public interface IProvider
     {

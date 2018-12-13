@@ -22,7 +22,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF6", "EF6\EF6.csproj", "{5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comparison", "Comparison\Comparison.csproj", "{6E3C338C-AFAA-4D0C-8C37-A599F3759028}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore", "EFCore\EFCore.csproj", "{D548EA80-ABC3-4D93-9581-C45C27FE7F83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore", "NetCore\NetCore.csproj", "{D548EA80-ABC3-4D93-9581-C45C27FE7F83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORMFree", "ORMFree\ORMFree.csproj", "{4A41A256-1026-4599-BB25-D7CE3CA9841D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{D548EA80-ABC3-4D93-9581-C45C27FE7F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D548EA80-ABC3-4D93-9581-C45C27FE7F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D548EA80-ABC3-4D93-9581-C45C27FE7F83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A41A256-1026-4599-BB25-D7CE3CA9841D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A41A256-1026-4599-BB25-D7CE3CA9841D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A41A256-1026-4599-BB25-D7CE3CA9841D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A41A256-1026-4599-BB25-D7CE3CA9841D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

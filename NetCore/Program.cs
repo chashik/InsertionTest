@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EFCore
+namespace NetCore
 {
     class Program
     {
@@ -15,6 +15,8 @@ namespace EFCore
             Console.WriteLine();
 
             var meterings = data.Meterings;
+
+            Test.Run(new SQLClientProvider(meterings));
 
             Test.Run(new EFCProvider(meterings));
 

@@ -2,7 +2,7 @@
 using System;
 
 
-namespace EFCore
+namespace NetCore
 {
     public class MyContext : DbContext
     {

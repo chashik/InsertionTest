@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace EFCore
+namespace NetCore
 {
     public class EFCProvider : Provider<METERING>
     {
-        public override string Name => "EFCore";
+        public override string Name => "NetCore";
 
         public EFCProvider(Metering[] meterings) : base(meterings)
             { }
