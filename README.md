@@ -3,4 +3,4 @@
 - Builder pattern. 
 - Provider class implements IProvider with variable insertion scenarios as abstract builder - Comparison proj. 
 - ConsoleApp proj. as director. 
-- Concrete builders: EF6, SqlBulkCopy + SQLClient, Linq2Sql, EFCore (Entity Framework Core).
+- Concrete builders: EF6, SqlBulkCopy + SQLClient, Linq2Sql, EFCore.
