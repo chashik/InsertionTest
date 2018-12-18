@@ -20,7 +20,7 @@ namespace NetCore
 
             Test.Run(new EFCProvider(meterings));
 
-            Console.WriteLine("Finished. Hit Enter to continue..");
+            Console.Write("Finished. Hit Enter to continue..");
             Console.ReadLine();
         }
     }
