@@ -43,6 +43,7 @@ namespace NetCore
                 {
                     IDOBJECT = p.IDOBJECT,
                     IDOBJECT_AVERAGE = p.IDOBJECT_AVERAGE,
+                    IDOBJECT_AGGREGATE = p.IDOBJECT_AGGREGATE,
                     IDTYPE_OBJECT = p.IDTYPE_OBJECT,
                     STATUS = p.STATUS,
                     TIME_BEGIN = p.TIME_BEGIN,

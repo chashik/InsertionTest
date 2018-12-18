@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Comparison
 {
-    public abstract class Provider<T> : IProvider where T : class
+    public abstract class Provider<T> : IProvider
     {
         private T[] _dataItems;
 
@@ -15,7 +15,7 @@ namespace Comparison
         }
 
         /// <summary>
-        /// Use to create ORM-specific entities collection
+        /// Use to create instance-based entities collection
         /// </summary>
         /// <param name="meterings"></param>
         /// <returns></returns>
@@ -51,6 +51,7 @@ namespace Comparison
         public int IDTYPE_OBJECT { get; set; }
         public DateTime TIME_BEGIN { get; set; }
         public DateTime TIME_END { get; set; }
+        public int IDOBJECT_AGGREGATE { get; set; }
         public int IDOBJECT_AVERAGE { get; set; }
         public int? STATUS { get; set; }
         public double VALUE_METERING { get; set; }

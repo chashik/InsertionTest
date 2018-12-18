@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace NetCore
 {
-    public abstract class Provider<T> : IProvider where T : class
+    public abstract class Provider<T> : IProvider
     {
         private T[] _dataItems;
 
@@ -15,7 +15,7 @@ namespace NetCore
         }
 
         /// <summary>
-        /// Use to creates ORM-specific entities collection
+        /// Use to creates instance-based entities collection
         /// </summary>
         /// <param name="meterings"></param>
         /// <returns></returns>
@@ -37,7 +37,7 @@ namespace NetCore
         }
 
         /// <summary>
-        /// Use with native ORM methods for adding range of objects
+        /// Use with instance-based methods for adding range of objects
         /// </summary>
         /// <param name="dataItems"></param>
         protected abstract void AddMultiple(T[] dataItems);
@@ -52,6 +52,7 @@ namespace NetCore
         public DateTime TIME_BEGIN { get; set; }
         public DateTime TIME_END { get; set; }
         public int IDOBJECT_AVERAGE { get; set; }
+        public int IDOBJECT_AGGREGATE { get; set; }
         public int? STATUS { get; set; }
         public double VALUE_METERING { get; set; }
     }

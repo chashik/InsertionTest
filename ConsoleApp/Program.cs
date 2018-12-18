@@ -26,7 +26,7 @@ namespace ConsoleApp
             Test.Run(new EF6Provider(meterings));
 
 
-            Console.WriteLine("Finished. Hit Enter to continue..");
+            Console.Write("Finished. Hit Enter to continue..");
             Console.ReadLine();
         }
     }

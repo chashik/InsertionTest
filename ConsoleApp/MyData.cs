@@ -16,6 +16,7 @@ namespace ConsoleApp
                 {
                     IDOBJECT = i,
                     IDOBJECT_AVERAGE = i,
+                    IDOBJECT_AGGREGATE = i,
                     IDTYPE_OBJECT = i,
                     STATUS = i,
                     TIME_BEGIN = tbegin,

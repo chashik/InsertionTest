@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GenericListDataReader.cs" />
-    <Compile Include="METERING.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLClientProvider.cs" />
   </ItemGroup>

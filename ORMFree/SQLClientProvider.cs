@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace ORMFree
 {
-    public class SQLClientProvider : Provider<METERING>
+    public class SQLClientProvider : Provider<Metering>
     {
         private string _connectionString;
 
@@ -24,15 +24,16 @@ namespace ORMFree
             {
                 myConnection.Open();
 
-                SqlCommand cmd = new SqlCommand("dbo.METERING_DeleteAll", myConnection);
-
-                cmd.CommandType = CommandType.StoredProcedure;
+                SqlCommand cmd = new SqlCommand("dbo.METERING_DeleteAll", myConnection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
 
                 cmd.ExecuteNonQuery();
             }
         }
 
-        protected override void AddMultiple(METERING[] dataItems)
+        protected override void AddMultiple(Metering[] dataItems)
         {
             using (SqlConnection myConnection = new SqlConnection(_connectionString))
             using (SqlBulkCopy bulkCopy = new SqlBulkCopy(myConnection))
@@ -58,7 +59,7 @@ namespace ORMFree
             }
         }
 
-        protected override void AddSingle(METERING item)
+        protected override void AddSingle(Metering item)
         {
              using (SqlConnection myConnection = new SqlConnection(_connectionString))
             {
@@ -76,26 +77,12 @@ namespace ORMFree
                 cmd.Parameters.Add(new SqlParameter("@TIME_BEGIN", item.TIME_BEGIN));
                 cmd.Parameters.Add(new SqlParameter("@STATUS", item.STATUS));
                 cmd.Parameters.Add(new SqlParameter("@VALUE_METERING", item.VALUE_METERING));
-                cmd.Parameters.Add(new SqlParameter("@TIME_INSERT", item.TIME_INSERT));
+                cmd.Parameters.Add(new SqlParameter("@TIME_INSERT", item.TIME_BEGIN));
 
                 cmd.ExecuteNonQuery();
             }
         }
 
-        protected override METERING[] CreateDataItems(Metering[] meterings)
-        {
-            return Array.ConvertAll(meterings,
-                p => new METERING()
-                {
-                    IDOBJECT = p.IDOBJECT,
-                    IDOBJECT_AVERAGE = p.IDOBJECT_AVERAGE,
-                    IDTYPE_OBJECT = p.IDTYPE_OBJECT,
-                    STATUS = p.STATUS,
-                    TIME_BEGIN = p.TIME_BEGIN,
-                    TIME_END = p.TIME_END,
-                    VALUE_METERING = p.VALUE_METERING,
-                    TIME_INSERT = p.TIME_BEGIN
-                });
-        }
+        protected override Metering[] CreateDataItems(Metering[] meterings) => meterings;
     }
 }
