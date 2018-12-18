@@ -15,7 +15,7 @@ namespace Comparison
         }
 
         /// <summary>
-        /// Use to creates ORM-specific entities collection
+        /// Use to create ORM-specific entities collection
         /// </summary>
         /// <param name="meterings"></param>
         /// <returns></returns>
@@ -37,7 +37,7 @@ namespace Comparison
         }
 
         /// <summary>
-        /// Use with native ORM methods for adding range of objects
+        /// Use with instance-based methods for adding range of objects
         /// </summary>
         /// <param name="dataItems"></param>
         protected abstract void AddMultiple(T[] dataItems);
