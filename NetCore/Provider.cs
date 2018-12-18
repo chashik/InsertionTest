@@ -15,7 +15,7 @@ namespace NetCore
         }
 
         /// <summary>
-        /// Use to creates instance-based entities collection
+        /// Use to create instance-based entities collection
         /// </summary>
         /// <param name="meterings"></param>
         /// <returns></returns>
