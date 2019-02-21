@@ -9,7 +9,7 @@ namespace Comparison
 
         public abstract string Name { get; }
 
-        public Provider(Metering[] meterings)
+        protected Provider(Metering[] meterings)
         {
             _dataItems = CreateDataItems(meterings);
         }
